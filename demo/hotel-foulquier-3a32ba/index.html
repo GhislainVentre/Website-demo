@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hôtel Restaurant Foulquier – Decazeville</title>
+<meta name="description" content="Hôtel Restaurant Foulquier à Decazeville (Aveyron) : chambres de 1 à 4 personnes, Wi-Fi gratuit, parking, restaurant de spécialités aveyronnaises et bar Le Play Off. Étape sur le GR 65.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Karla:wght@400;500;700&display=swap">
+<style>
+/* L'ancienne cité minière : schiste, charbon, brique et ocre du Rouergue. */
+:root{
+  --bg:#f7f2ea;
+  --bg2:#efe5d6;
+  --fg:#211c19;
+  --muted:#6b5f56;
+  --line:#e0d3c1;
+  --brick:#a8402a;      /* brique */
+  --brick-ink:#8d3320;
+  --ochre:#d99a2b;      /* ocre, l'or des feux d'artifice */
+  --coal:#1e1c1b;       /* charbon */
+  --on-coal:#f4eee6;
+  --display:'Zilla Slab',Rockwell,Georgia,serif;
+  --body:'Karla','Segoe UI',Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171412;--bg2:#211c19;--fg:#f1e9df;--muted:#bba999;--line:#3a312b;--brick:#d4664c;--brick-ink:#e9876f;--ochre:#e6ad47;--coal:#0f0d0c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171412;--bg2:#211c19;--fg:#f1e9df;--muted:#bba999;--line:#3a312b;--brick:#d4664c;--brick-ink:#e9876f;--ochre:#e6ad47;--coal:#0f0d0c;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--ochre);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;margin:0;text-wrap:balance}
+h2{font-size:clamp(2rem,6.5vw,3.1rem)}
+h3{font-size:1.4rem}
+p{margin:0}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:20px}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brick-ink);font-weight:700}
+section{padding-block:clamp(56px,9vw,100px)}
+.head{display:grid;gap:.8rem;max-width:44rem;margin-bottom:2.2rem}
+.head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.3rem;border-radius:6px;font-weight:700;text-decoration:none;border:2px solid var(--brick);background:var(--brick);color:#fff;white-space:nowrap}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn svg{width:18px;height:18px;flex:none}
+
+header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 93%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.mark{width:38px;height:38px;flex:none;border-radius:6px;background:var(--brick);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:1.3rem}
+.brand span{font-family:var(--display);font-weight:700;font-size:1.2rem;line-height:1.05;white-space:nowrap}
+.brand small{display:block;font-family:var(--body);font-weight:500;font-size:.7rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+nav ul{list-style:none;display:flex;gap:1.4rem;margin:0;padding:0}
+nav a{text-decoration:none;font-weight:500;font-size:.95rem}
+@media (max-width:880px){nav{display:none}}
+.nav .btn{padding:.5rem .9rem;font-size:.9rem}
+
+/* Accueil : chevalement de mine en SVG sur fond charbon */
+.hero{background:var(--coal);color:var(--on-coal);position:relative;overflow:hidden;padding-block:clamp(64px,12vw,130px) clamp(56px,9vw,96px)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 85% 20%,rgba(217,154,43,.28),transparent 60%),radial-gradient(ellipse 60% 50% at 10% 110%,rgba(168,64,42,.45),transparent 60%)}
+.hero .frame{position:absolute;right:max(20px,calc(50% - 540px));bottom:0;width:min(300px,42vw);height:auto;color:rgba(244,238,230,.16)}
+.spark{position:absolute;border-radius:50%;background:var(--ochre);opacity:.7}
+.hero .wrap{position:relative}
+.hero .eyebrow{color:var(--ochre)}
+.hero h1{font-size:clamp(2.6rem,10vw,5rem);margin-top:.8rem;max-width:11ch}
+.hero h1 em{font-style:normal;color:var(--ochre)}
+.hero .lede{margin-top:1.1rem;max-width:34rem;font-size:1.1rem;color:rgba(244,238,230,.85)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
+.hero .btn.ghost{color:var(--on-coal)}
+.trio{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2.2rem}
+.trio span{border:1px solid rgba(244,238,230,.25);border-radius:999px;padding:.3rem .8rem;font-size:.88rem;color:rgba(244,238,230,.85)}
+
+/* Trois maisons : hôtel, table, bar */
+.houses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.house{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:1.6rem;display:grid;gap:.9rem;align-content:start;min-width:0;position:relative;overflow:hidden}
+.house::before{content:"";position:absolute;left:0;top:0;right:0;height:6px;background:var(--brick)}
+.house:nth-child(2)::before{background:var(--ochre)}
+.house:nth-child(3)::before{background:var(--fg)}
+.house .ico{width:44px;height:44px;color:var(--brick)}
+.house p{color:var(--muted)}
+.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+.tags li{font-size:.84rem;font-weight:500;border:1px solid var(--line);border-radius:999px;padding:.2rem .65rem;background:var(--bg2)}
+@media (max-width:900px){.houses{grid-template-columns:minmax(0,1fr)}}
+
+/* Table */
+.table{background:var(--bg2)}
+.table .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:center}
+.dishes{display:grid;gap:12px}
+.dish{display:flex;align-items:baseline;gap:.8rem;font-family:var(--display);font-size:clamp(1.5rem,5vw,2.1rem);font-weight:700;border-bottom:1px dashed var(--line);padding-bottom:.6rem}
+.dish small{font-family:var(--body);font-size:.9rem;font-weight:500;color:var(--muted);margin-left:auto;text-align:right}
+@media (max-width:820px){.table .grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Randonneurs */
+.gr{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,5vw,64px);align-items:center}
+.route{position:relative;border-radius:10px;background:var(--coal);color:var(--on-coal);padding:1.6rem 1.4rem;display:grid;gap:1.1rem;min-width:0}
+.route .line{position:absolute;left:calc(1.4rem + 9px);top:2.4rem;bottom:2.4rem;width:2px;background:repeating-linear-gradient(to bottom,var(--ochre) 0 8px,transparent 8px 14px)}
+.stop{display:flex;align-items:center;gap:1rem;position:relative}
+.stop i{width:20px;height:20px;border-radius:50%;border:3px solid var(--ochre);background:var(--coal);flex:none}
+.stop.here i{background:var(--brick);border-color:#fff;box-shadow:0 0 0 4px rgba(168,64,42,.4)}
+.stop b{font-family:var(--display);font-size:1.3rem}
+.stop span{font-size:.88rem;color:rgba(244,238,230,.7)}
+@media (max-width:820px){.gr{grid-template-columns:minmax(0,1fr)}}
+
+/* À découvrir */
+.see{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.spot{border-left:4px solid var(--ochre);background:var(--bg2);border-radius:0 8px 8px 0;padding:1.2rem 1.3rem;display:grid;gap:.4rem;min-width:0}
+.spot p{color:var(--muted);font-size:.97rem}
+@media (max-width:700px){.see{grid-template-columns:minmax(0,1fr)}}
+
+/* Contact */
+.contact{background:var(--coal);color:var(--on-coal)}
+.contact .eyebrow{color:var(--ochre)}
+.contact .head p{color:rgba(244,238,230,.75)}
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.card{border:1px solid rgba(244,238,230,.18);border-radius:10px;padding:1.5rem;display:grid;gap:.9rem;align-content:start;min-width:0}
+.big{font-family:var(--display);font-size:clamp(1.6rem,6vw,2.3rem);line-height:1.1;text-decoration:none;overflow-wrap:anywhere}
+.mail{font-weight:700;overflow-wrap:anywhere}
+.contact .btn.ghost{color:var(--on-coal)}
+.row{display:flex;flex-wrap:wrap;gap:.6rem}
+@media (max-width:760px){.cgrid{grid-template-columns:minmax(0,1fr)}}
+
+footer{background:#0f0d0c;color:#b3a698;padding-block:26px;font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.2rem}
+footer b{color:#fff}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:20;display:none}
+.callbar .btn{width:100%;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+@media (max-width:600px){.callbar{display:block}footer{padding-bottom:90px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true">F</span><span>Hôtel Foulquier<small>Hôtel · Restaurant · Bar</small></span></a>
+    <nav aria-label="Navigation principale"><ul>
+      <li><a href="#hotel">L'hôtel</a></li>
+      <li><a href="#table">La table</a></li>
+      <li><a href="#randonneurs">Randonneurs</a></li>
+      <li><a href="#decouvrir">À découvrir</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <a class="btn" href="tel:+33565632742"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Réserver</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <svg class="frame" viewBox="0 0 200 260" fill="none" stroke="currentColor" stroke-width="5" aria-hidden="true">
+      <circle cx="100" cy="40" r="26"/><circle cx="100" cy="40" r="6"/>
+      <path d="M100 40 L40 260 M100 40 L160 260 M60 186 H140 M76 128 H124 M50 222 L150 222 M70 150 L130 186 M130 150 L70 186"/>
+      <path d="M0 260 H200"/>
+    </svg>
+    <span class="spark" style="width:6px;height:6px;right:22%;top:18%"></span>
+    <span class="spark" style="width:4px;height:4px;right:30%;top:28%"></span>
+    <span class="spark" style="width:5px;height:5px;right:14%;top:30%"></span>
+    <div class="wrap">
+      <p class="eyebrow">Decazeville · Aveyron</p>
+      <h1>Hôtel Restaurant <em>Foulquier</em></h1>
+      <p class="lede">Au cœur de l'ancienne cité minière, à quelques pas des complexes sportifs et des commerces, l'Hôtel Restaurant Foulquier vous accueille le temps de votre séjour.</p>
+      <div class="ctas">
+        <a class="btn" href="tel:+33565632742">Réserver : 05 65 63 27 42</a>
+        <a class="btn ghost" href="#hotel">Découvrir l'hôtel</a>
+      </div>
+      <div class="trio"><span>Hôtel</span><span>Restaurant</span><span>Bar Le Play Off</span><span>Étape du GR 65</span></div>
+    </div>
+  </section>
+
+  <section id="hotel">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Une maison, trois façons d'en profiter</p>
+        <h2>Dormir, bien manger, se retrouver</h2>
+        <p>Au nord de l'Aveyron, entre Lot et Cantal, Rouergue et Quercy.</p>
+      </div>
+      <div class="houses">
+        <article class="house">
+          <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 32V14M6 24h32v8M38 32v-6a4 4 0 0 0-4-4H20v2"/><circle cx="13" cy="20" r="3"/></svg>
+          <h3>L'hôtel</h3>
+          <p>Des chambres pour 1 à 4 personnes, dont une chambre adaptée aux personnes handicapées. Toutes ont douche et WC, téléphone direct et télévision.</p>
+          <ul class="tags"><li>Wi-Fi gratuit</li><li>Vaste parking</li><li>Salle de réunion</li><li>Chambre accessible</li></ul>
+        </article>
+        <article class="house">
+          <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 24h28a14 14 0 0 1-28 0zM22 10v6M16 12l1 4M28 12l-1 4"/></svg>
+          <h3>Le restaurant</h3>
+          <p>Une cuisine traditionnelle et toute la gamme des spécialités régionales, dans un cadre agréable, accompagnée d'un grand choix de vins de la région.</p>
+          <ul class="tags"><li>Tripous</li><li>Aligot saucisse</li><li>Vins de la région</li></ul>
+        </article>
+        <article class="house">
+          <svg class="ico" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="22" cy="22" rx="16" ry="10" transform="rotate(-35 22 22)"/><path d="M15 27l14-10M18 22l3 3M21 20l3 3M24 18l3 3"/></svg>
+          <h3>Le bar Le Play Off</h3>
+          <p>Une ambiance chaleureuse, fortement imprégnée de l'esprit rugby. On s'installe dans le petit salon, un œil sur l'écran géant.</p>
+          <ul class="tags"><li>Écran géant</li><li>Boissons locales</li><li>Grand choix de bières</li><li>Wi-Fi gratuit</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="table" class="table">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Notre table</p>
+        <h2 style="margin-top:.8rem">Le goût de l'Aveyron</h2>
+        <p style="color:var(--muted);margin-top:1rem;max-width:32rem">Le temps d'un repas, venez découvrir une cuisine traditionnelle et les spécialités du pays. Sur le plan de la gastronomie, ce terroir est riche de multiples saveurs.</p>
+        <div class="row" style="margin-top:1.4rem"><a class="btn" href="tel:+33565632742">Réserver une table</a></div>
+      </div>
+      <div class="dishes" aria-label="Spécialités">
+        <div class="dish">Tripous <small>spécialité aveyronnaise</small></div>
+        <div class="dish">Aligot saucisse <small>le classique du pays</small></div>
+        <div class="dish">Vins de la région <small>un grand choix</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="randonneurs">
+    <div class="wrap gr">
+      <div>
+        <p class="eyebrow">Amis randonneurs</p>
+        <h2 style="margin-top:.8rem">Une étape sur le chemin de Saint-Jacques</h2>
+        <p style="color:var(--muted);margin-top:1rem">Decazeville est une étape du GR 65, entre Conques et Figeac. Après la journée de marche, une chambre, un bon repas et un petit-déjeuner vous attendent.</p>
+        <p style="color:var(--muted);margin-top:.8rem">Formules soirée étape pour les randonneurs et les représentants, et demi-pension pour les séjours : renseignez-vous par téléphone.</p>
+      </div>
+      <div class="route" aria-label="Le GR 65 autour de Decazeville">
+        <span class="line" aria-hidden="true"></span>
+        <div class="stop"><i></i><div><b>Conques</b><br><span>à une vingtaine de kilomètres</span></div></div>
+        <div class="stop here"><i></i><div><b>Decazeville</b><br><span>Hôtel Foulquier, 14 bis avenue Victor Hugo</span></div></div>
+        <div class="stop"><i></i><div><b>Figeac</b><br><span>la suite du chemin, vers le Quercy</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="decouvrir" style="background:var(--bg2)">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">À découvrir</p>
+        <h2>Autour de Decazeville</h2>
+        <p>À quatre kilomètres du Lot, entre Quercy et Auvergne : des paysages variés et de nombreuses distractions.</p>
+      </div>
+      <div class="see">
+        <div class="spot"><h3>Decazeville</h3><p>Fondée au XIXe siècle par le duc Decazes pour le charbon et la sidérurgie, la ville abritait « La Découverte », la plus grande mine à ciel ouvert d'Europe.</p></div>
+        <div class="spot"><h3>Conques</h3><p>Grand site de France, classé parmi les plus beaux villages de France : son abbatiale romane, le tympan du Jugement dernier et les vitraux de Pierre Soulages.</p></div>
+        <div class="spot"><h3>Le festival de feux d'artifice</h3><p>Au cœur de l'ancienne mine à ciel ouvert, Decazeville accueille depuis 1998 son festival intercontinental de feux d'artifice.</p></div>
+        <div class="spot"><h3>« Hier un village » et la vallée du Lot</h3><p>Le grand spectacle estival de Flagnac retrace la vie du village au début du XXe siècle ; la vallée du Lot se découvre à quelques minutes.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Réservations et contact</p>
+        <h2>Réservez votre chambre ou votre table</h2>
+        <p>Le plus simple : un coup de téléphone. Vous pouvez aussi nous écrire.</p>
+      </div>
+      <div class="cgrid">
+        <div class="card">
+          <h3>Téléphone et e-mail</h3>
+          <a class="big" href="tel:+33565632742">05 65 63 27 42</a>
+          <a class="mail" href="mailto:hotel.foulquier@hotmail.fr">hotel.foulquier@hotmail.fr</a>
+          <div class="row"><a class="btn" href="tel:+33565632742">Appeler</a><a class="btn ghost" href="mailto:hotel.foulquier@hotmail.fr?subject=R%C3%A9servation">Écrire</a></div>
+        </div>
+        <div class="card">
+          <h3>Adresse</h3>
+          <p class="big">14 bis avenue Victor Hugo<br>12300 Decazeville</p>
+          <div class="row"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=H%C3%B4tel+Foulquier+14+bis+avenue+Victor+Hugo+12300+Decazeville">Itinéraire</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span><b>Hôtel Restaurant Foulquier</b> · 14 bis avenue Victor Hugo, 12300 Decazeville</span><span>Hôtel · Restaurant · Bar Le Play Off</span></div></footer>
+<div class="callbar"><a class="btn" href="tel:+33565632742">Réserver : 05 65 63 27 42</a></div>
+</body>
+</html>

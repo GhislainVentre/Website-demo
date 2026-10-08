@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Olivier Mallemouche – Souffleur de verre</title>
+<meta name="description" content="Olivier Mallemouche, souffleur de verre à Bretenoux (Lot) : pièces uniques soufflées à la canne, peinture intercalaire, feuille d'or et d'argent. Atelier, collections et contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&display=swap">
+<style>
+/* Papier blanc, encre noire des petits personnages, bleu du logo, et les couleurs du verre (citron, fuchsia, bleu océan). */
+:root{
+  --bg:#fbfaf7;
+  --bg2:#f1efe9;
+  --fg:#16181c;
+  --muted:#5f636b;
+  --line:#e2dfd7;
+  --blue:#2c4f86;      /* bleu du logo */
+  --blue-ink:#23406e;
+  --citron:#e8c62c;
+  --fuchsia:#c4317c;
+  --ocean:#1d7e8c;
+  --night:#121418;
+  --display:'Jost','Futura','Century Gothic',Helvetica,Arial,sans-serif;
+  --body:'Literata',Georgia,'Times New Roman',serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121418;--bg2:#1a1d22;--fg:#eceae4;--muted:#a9adb5;--line:#2c3038;--blue:#86a7dc;--blue-ink:#a4bfe8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121418;--bg2:#1a1d22;--fg:#eceae4;--muted:#a9adb5;--line:#2c3038;--blue:#86a7dc;--blue-ink:#a4bfe8;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.7;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1;margin:0;text-wrap:balance}
+h2{font-size:clamp(1.9rem,6vw,2.9rem);letter-spacing:.02em}
+h3{font-size:1.25rem;font-weight:500;letter-spacing:.04em}
+p{margin:0}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:20px}
+.eyebrow{font-family:var(--display);font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--blue);font-weight:500}
+section{padding-block:clamp(60px,9vw,110px)}
+.head{display:grid;gap:.8rem;max-width:42rem;margin-bottom:2.4rem}
+.head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.4rem;border-radius:999px;font-family:var(--display);font-weight:500;letter-spacing:.06em;text-decoration:none;border:1.5px solid var(--blue);background:var(--blue);color:#fff;white-space:nowrap}
+.btn.ghost{background:transparent;color:var(--blue)}
+.btn svg{width:18px;height:18px;flex:none}
+
+header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.brand{font-family:var(--display);text-decoration:none;letter-spacing:.24em;text-transform:uppercase;font-size:.95rem;color:var(--blue-ink);line-height:1.2;min-width:0}
+.brand b{font-weight:500;display:block}
+.brand span{font-weight:300;font-size:.7rem;letter-spacing:.3em;color:var(--muted)}
+nav ul{list-style:none;display:flex;gap:1.6rem;margin:0;padding:0}
+nav a{font-family:var(--display);text-decoration:none;font-size:.95rem;letter-spacing:.04em}
+@media (max-width:880px){nav{display:none}}
+.nav .btn{padding:.45rem .95rem;font-size:.88rem}
+
+/* Accueil */
+.hero{padding-block:clamp(40px,7vw,80px) clamp(56px,8vw,96px)}
+.hero .grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,64px);align-items:center}
+.hero h1{font-size:clamp(2.6rem,9vw,4.8rem);font-weight:300;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-ink);line-height:1.02}
+.hero h1 span{display:block}
+.hero .role{font-family:var(--display);letter-spacing:.32em;text-transform:uppercase;font-size:.9rem;margin-top:1.2rem;color:var(--muted)}
+.hero .lede{margin-top:1.4rem;max-width:32rem;font-size:1.12rem}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
+.motifs{position:relative;border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.motifs img{width:100%}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .motifs{background:#f4f2ec}}
+@media (max-width:820px){.hero .grid{grid-template-columns:minmax(0,1fr)}.motifs{order:-1}}
+
+/* Démarche */
+.about{background:var(--bg2)}
+.about .grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,6vw,72px);align-items:start}
+.about blockquote{margin:0;font-style:italic;font-size:clamp(1.4rem,4.4vw,1.9rem);line-height:1.35;color:var(--blue-ink);border-left:3px solid var(--citron);padding-left:1.2rem}
+.about blockquote cite{display:block;font-style:normal;font-family:var(--display);letter-spacing:.2em;text-transform:uppercase;font-size:.75rem;color:var(--muted);margin-top:1rem}
+.about .txt{display:grid;gap:1.1rem}
+@media (max-width:820px){.about .grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Technique */
+.tech{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.t{display:grid;gap:.7rem;align-content:start;min-width:0}
+.t .drop{width:54px;height:54px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;box-shadow:inset -6px -8px 14px rgba(0,0,0,.18),inset 6px 6px 12px rgba(255,255,255,.55)}
+.t p{color:var(--muted)}
+@media (max-width:820px){.tech{grid-template-columns:minmax(0,1fr)}}
+
+/* Collections */
+.coll .grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,60px);align-items:start}
+.feature{margin:0;border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.feature img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.feature figcaption{font-family:var(--display);letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;padding:.8rem 1rem;color:#5f636b;background:#fff}
+.names{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.names li{display:flex;align-items:center;gap:.8rem;border:1px solid var(--line);border-radius:999px;padding:.6rem 1rem;font-family:var(--display);font-size:1.08rem;letter-spacing:.06em;min-width:0;background:var(--bg)}
+.names i{width:16px;height:16px;border-radius:50%;flex:none;box-shadow:inset -3px -3px 5px rgba(0,0,0,.2);background:var(--citron)}
+.names li:nth-child(3n+2) i{background:var(--fuchsia)}
+.names li:nth-child(3n) i{background:var(--ocean)}
+@media (max-width:820px){.coll .grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:420px){.names{grid-template-columns:minmax(0,1fr)}}
+
+/* Expositions */
+.expo{background:var(--night);color:#eceae4}
+.expo .eyebrow{color:var(--citron)}
+.expo .head p{color:#a9adb5}
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid #2c3038}
+.timeline li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:1rem;padding:1.1rem 0;border-bottom:1px solid #2c3038}
+.timeline b{font-family:var(--display);font-weight:400;letter-spacing:.1em;color:var(--citron)}
+.timeline span{color:#d6d4ce}
+@media (max-width:520px){.timeline li{grid-template-columns:minmax(0,1fr);gap:.2rem}}
+
+/* Atelier et contact */
+.visit .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.card{border:1px solid var(--line);border-radius:16px;padding:1.6rem;display:grid;gap:.9rem;align-content:start;min-width:0;background:var(--bg)}
+.big{font-family:var(--display);font-weight:300;font-size:clamp(1.6rem,6vw,2.2rem);line-height:1.15;text-decoration:none;color:var(--blue-ink);overflow-wrap:anywhere}
+.mail{font-family:var(--display);overflow-wrap:anywhere}
+.hours{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.3rem 1.2rem;font-family:var(--display)}
+.hours dt{color:var(--muted)}
+.hours dd{margin:0}
+.row{display:flex;flex-wrap:wrap;gap:.6rem}
+@media (max-width:760px){.visit .grid{grid-template-columns:minmax(0,1fr)}}
+
+footer{border-top:1px solid var(--line);padding-block:26px;font-family:var(--display);font-size:.88rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.2rem}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:20;display:none}
+.callbar .btn{width:100%;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+@media (max-width:600px){.callbar{display:block}footer{padding-bottom:90px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><b>Olivier Mallemouche</b><span>Souffleur de verre</span></a>
+    <nav aria-label="Navigation principale"><ul>
+      <li><a href="#demarche">Démarche</a></li>
+      <li><a href="#technique">Technique</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#expositions">Expositions</a></li>
+      <li><a href="#atelier">Atelier</a></li>
+    </ul></nav>
+    <a class="btn" href="tel:+33688020134">Appeler</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Bretenoux · Lot</p>
+        <h1 style="margin-top:1rem"><span>Olivier</span><span>Mallemouche</span></h1>
+        <p class="role">Souffleur de verre</p>
+        <p class="lede">Des pièces uniques soufflées «&nbsp;à l'instinct&nbsp;» et «&nbsp;dans l'instant&nbsp;», où se glissent, entre les couches de verre, des visages, des calligraphies et la lumière de la feuille d'or.</p>
+        <div class="ctas">
+          <a class="btn" href="#collections">Voir les collections</a>
+          <a class="btn ghost" href="#atelier">Venir à l'atelier</a>
+        </div>
+      </div>
+      <figure class="motifs" style="margin:0">
+        <img src="img/motifs-mallemouche.png" alt="Le logo d'Olivier Mallemouche : son nom entouré de dizaines de petits flacons, vases et personnages dessinés à l'encre" width="700" height="560">
+      </figure>
+    </div>
+  </section>
+
+  <section id="demarche" class="about">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Démarche</p>
+        <blockquote style="margin-top:1.4rem">Olivier s'autorise à la créativité, à la figuration, tout en conservant une dimension traditionnelle.<cite>M. Fadat</cite></blockquote>
+      </div>
+      <div class="txt">
+        <h2>Souffler devient un besoin</h2>
+        <p>Sa vocation remonte à l'âge de huit ans. De son apprentissage, au début des années 80, à la création de son premier atelier, il perfectionne ses techniques et passe très vite des pièces utilitaires aux pièces uniques.</p>
+        <p>Il puise dans les Arts premiers, les arts calligraphiques et l'art moderne, et mène une quête plus graphique que formelle, malgré la figuration qu'il introduit peu à peu. Il reste assez classique dans sa façon d'aborder les supports, sauf pour leur format, parfois exceptionnellement grand.</p>
+        <p>Sans dessin préparatoire, il prévisualise ses pièces avant de jouer avec l'aléatoire&nbsp;: un corps-à-corps toujours plus direct avec la matière. Il crée aussi librement des «&nbsp;personnages&nbsp;», dans la veine ludique du verre contemporain.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="technique">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Technique</p>
+        <h2>La couleur prise dans le verre</h2>
+        <p>Le traitement chromatique est son domaine d'excellence, et il y est autodidacte.</p>
+      </div>
+      <div class="tech">
+        <div class="t"><span class="drop" style="background:radial-gradient(circle at 35% 30%,#fff7c4,var(--citron) 55%,#b8901a)"></span><h3>Soufflé à la canne</h3><p>Chaque pièce est soufflée à la canne, sans dessin préparatoire.</p></div>
+        <div class="t"><span class="drop" style="background:radial-gradient(circle at 35% 30%,#ffd0e6,var(--fuchsia) 55%,#7d1a4c)"></span><h3>Peinture intercalaire</h3><p>Dessins, visages, calligraphies ou motifs abstraits sont pris entre les couches successives du verre, au fil de nombreuses cuissons.</p></div>
+        <div class="t"><span class="drop" style="background:radial-gradient(circle at 35% 30%,#c8f1f4,var(--ocean) 55%,#0e4a53)"></span><h3>Or, argent et couleurs</h3><p>Sur fond de feuille d'or, d'argent et de masses colorées aux recettes secrètes.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="collections" class="coll" style="background:var(--bg2)">
+    <div class="wrap grid">
+      <figure class="feature">
+        <img src="img/huma.jpg" alt="Pièce en verre soufflé d'Olivier Mallemouche : verre clair, cœur vert et orange traversé de fils de couleur" width="400" height="400" loading="lazy">
+        <figcaption>Pièce unique, verre soufflé</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">Collections</p>
+        <h2 style="margin-top:.8rem">Onze familles de pièces uniques</h2>
+        <p style="color:var(--muted);margin-top:1rem;margin-bottom:1.6rem">Des pièces uniques, du petit format à la pièce monumentale.</p>
+        <ul class="names">
+          <li><i></i>Cocon</li>
+          <li><i></i>Humanis</li>
+          <li><i></i>Massai</li>
+          <li><i></i>Tantines &amp; Tantinettes</li>
+          <li><i></i>Chrysalide</li>
+          <li><i></i>Picto</li>
+          <li><i></i>Signe</li>
+          <li><i></i>Plume</li>
+          <li><i></i>Imaginaterre</li>
+          <li><i></i>Horizon</li>
+          <li><i></i>Vénérables</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="expositions" class="expo">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Expositions et salons</p>
+        <h2>Où l'on a vu ses pièces</h2>
+        <p>Une sélection de salons et d'expositions.</p>
+      </div>
+      <ul class="timeline">
+        <li><b>2026</b><span>Exposition-vente collective sur l'art du verre, galerie de l'Ancien Presbytère, Moustiers-Sainte-Marie</span></li>
+        <li><b>2020</b><span>«&nbsp;Souffles de verre&nbsp;», Halle du verre, Claret</span></li>
+        <li><b>2017</b><span>Biennale des verriers, Carmaux · Été verrier, Blangy-sur-Bresle</span></li>
+        <li><b>2016</b><span>Salon «&nbsp;Pièce unique&nbsp;», château de Châteaugiron</span></li>
+        <li><b>2013–2014</b><span>Salon Maison&nbsp;&amp;&nbsp;Objet, Paris</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="atelier" class="visit">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">L'atelier</p>
+        <h2>Visiter l'atelier</h2>
+        <p>L'atelier se trouve à Bretenoux, dans le Lot, sur la route du château de Castelnau.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Adresse</h3>
+          <p class="big">460 route du château de Castelnau<br>46130 Bretenoux</p>
+          <dl class="hours">
+            <dt>Lundi au samedi</dt><dd>9 h – 12 h · 14 h – 18 h</dd>
+          </dl>
+          <div class="row"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=460+route+du+ch%C3%A2teau+de+Castelnau+46130+Bretenoux">Itinéraire</a></div>
+        </div>
+        <div class="card">
+          <h3>Téléphone et e-mail</h3>
+          <a class="big" href="tel:+33688020134">06 88 02 01 34</a>
+          <a class="mail" href="mailto:mallemouche.olivier@bbox.fr">mallemouche.olivier@bbox.fr</a>
+          <div class="row"><a class="btn" href="tel:+33688020134">Appeler</a><a class="btn ghost" href="mailto:mallemouche.olivier@bbox.fr">Écrire</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>Olivier Mallemouche · Souffleur de verre</span><span>460 route du château de Castelnau, 46130 Bretenoux</span></div></footer>
+<div class="callbar"><a class="btn" href="tel:+33688020134">Appeler l'atelier</a></div>
+</body>
+</html>

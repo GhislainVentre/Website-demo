@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ferme Âne &amp; Carotte · Champagnac-la-Rivière</title>
+<meta name="description" content="Ferme bio de 13 hectares aux Jarosses (Champagnac-la-Rivière), au cœur du Parc naturel régional Périgord-Limousin : boutique de légumes de saison, cabane, camping à la ferme et soirées F'âne de culture.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+/* Terre du potager, fanes vertes et l'orange de la carotte */
+:root{
+  --bg:#fbf6ec; --bg2:#f2e8d5; --fg:#2b2118; --muted:#6d5e4f; --line:#e6d8bf;
+  --carrot:#e2661d; --carrot-ink:#b34a0c; --leaf:#4e7a2a; --leaf-dk:#2f4d1a; --donkey:#7a6a5c; --cream:#fffaf1;
+  --display:'Bricolage Grotesque',system-ui,sans-serif; --body:'Nunito','Segoe UI',Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17130e;--bg2:#211b14;--fg:#f5ecdf;--muted:#c3b29f;--line:#3a3026;--carrot-ink:#f0894a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17130e;--bg2:#211b14;--fg:#f5ecdf;--muted:#c3b29f;--line:#3a3026;--carrot-ink:#f0894a;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:clamp(2rem,7vw,3.2rem)}
+h3{font-size:1.35rem;font-weight:600}
+p{margin:0}
+.wrap{max-width:1140px;margin-inline:auto;padding-inline:20px}
+section{padding-block:clamp(56px,9vw,100px)}
+.tag{display:inline-block;font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--carrot-ink)}
+.head{display:grid;gap:.8rem;max-width:44rem;margin-bottom:2.2rem}
+.head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.3rem;border-radius:999px;font-weight:700;text-decoration:none;background:var(--carrot);color:#fff;border:2px solid var(--carrot);white-space:nowrap}
+.btn.alt{background:transparent;color:inherit;border-color:currentColor}
+.btn svg{width:18px;height:18px;flex:none}
+a:focus-visible{outline:3px solid var(--carrot);outline-offset:3px}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:62px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.2rem;white-space:nowrap}
+.brand svg{width:30px;height:30px;flex:none}
+.brand i{font-style:normal;color:var(--carrot)}
+.nav ul{display:flex;gap:1.3rem;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-weight:600;font-size:.95rem}
+.nav .btn{padding:.5rem .95rem;font-size:.9rem}
+@media (max-width:920px){.nav ul{display:none}}
+
+/* Hero */
+.hero{padding-block:clamp(28px,5vw,56px) clamp(40px,6vw,72px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,5vw,60px);align-items:center}
+.hero h1{font-size:clamp(2.7rem,10vw,5.2rem);margin-top:.7rem}
+.hero h1 span{color:var(--carrot)}
+.hero .lede{margin-top:1.1rem;font-size:1.1rem;color:var(--muted);max-width:32rem}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.photo-blob{position:relative}
+.photo-blob img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:44% 56% 52% 48% / 46% 42% 58% 54%}
+.sticker{position:absolute;left:-6px;bottom:6%;background:var(--leaf);color:#fff;border-radius:18px;padding:.7rem 1rem;font-weight:700;line-height:1.25;transform:rotate(-4deg);box-shadow:0 10px 24px rgba(0,0,0,.18);font-size:.95rem}
+.sticker b{display:block;font-family:var(--display);font-size:1.5rem}
+@media (max-width:820px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.photo-blob{order:-1}.sticker{left:8px}}
+
+/* Horaires ruban */
+.ribbon{background:var(--leaf-dk);color:#fff}
+.ribbon .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 28px;padding-block:22px}
+.ribbon h2{font-size:1.5rem}
+.hours{display:flex;flex-wrap:wrap;gap:10px}
+.hours div{background:rgba(255,255,255,.12);border-radius:14px;padding:.55rem 1rem;font-weight:600}
+.hours b{color:#ffc79c;margin-right:.35rem}
+
+/* Boutique */
+.shop{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,56px);align-items:center}
+.shop .txt{display:grid;gap:1rem}
+.shop .txt > p{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chips span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.25rem .8rem;font-size:.9rem;font-weight:600}
+.chips.green span{background:color-mix(in srgb,var(--leaf) 14%,var(--bg));border-color:color-mix(in srgb,var(--leaf) 30%,var(--bg))}
+.mosaic{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:10px}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+.mosaic .tall{grid-row:span 2;aspect-ratio:3/4}
+.mosaic .sq{aspect-ratio:4/3}
+@media (max-width:820px){.shop{grid-template-columns:minmax(0,1fr)}}
+
+/* Cultures */
+.fields{background:var(--bg2)}
+.fgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.fgrid figure{margin:0;position:relative;border-radius:16px;overflow:hidden;min-width:0}
+.fgrid img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.fgrid figcaption{position:absolute;left:10px;bottom:10px;background:var(--cream);color:#2b2118;font-weight:700;font-size:.82rem;border-radius:999px;padding:.2rem .7rem}
+@media (max-width:820px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:2rem}
+.pillars div{background:var(--bg);border-radius:16px;padding:1.2rem 1.3rem;min-width:0}
+.pillars b{font-family:var(--display);font-size:2rem;color:var(--leaf);display:block;line-height:1}
+.pillars span{color:var(--muted);font-size:.95rem}
+@media (max-width:720px){.pillars{grid-template-columns:minmax(0,1fr)}}
+
+/* Dormir */
+.stay{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+.offer{border:2px solid var(--line);border-radius:22px;overflow:hidden;display:grid;grid-template-rows:auto 1fr;min-width:0;background:var(--bg)}
+.offer img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.offer .in{padding:1.4rem 1.4rem 1.6rem;display:grid;gap:.75rem;align-content:start}
+.offer .when{display:inline-block;background:var(--carrot);color:#fff;font-weight:700;font-size:.82rem;border-radius:999px;padding:.2rem .75rem;justify-self:start}
+.offer p{color:var(--muted)}
+.price{display:grid;gap:.35rem;margin:0;padding:0;list-style:none}
+.price li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--line);padding-bottom:.35rem;font-size:.96rem}
+.price li b{white-space:nowrap;color:var(--carrot-ink)}
+.thumbs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+.thumbs img{aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+@media (max-width:820px){.stay{grid-template-columns:minmax(0,1fr)}}
+
+/* Petit déj */
+.breakfast{background:var(--carrot);color:#fff}
+.breakfast .tag{color:#ffe1c8}
+.breakfast .head p{color:rgba(255,255,255,.9)}
+.bgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+.formula{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:1.4rem;min-width:0}
+.formula h3{font-size:1.6rem;margin-bottom:.6rem}
+.formula ul{margin:0;padding-left:1.1rem;display:grid;gap:.2rem}
+.breakfast .note{margin-top:1.6rem;font-weight:700}
+.breakfast .btn{background:#fff;color:var(--carrot-ink);border-color:#fff}
+@media (max-width:720px){.bgrid{grid-template-columns:minmax(0,1fr)}}
+
+/* F'âne de culture */
+.culture .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(24px,5vw,56px);align-items:start}
+.prog{list-style:none;margin:1.4rem 0 0;padding:0;display:grid;gap:10px}
+.prog li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:center;background:var(--bg2);border-radius:16px;padding:.7rem .9rem}
+.prog time{background:#4b3c8c;color:#fff;border-radius:12px;text-align:center;font-family:var(--display);font-weight:800;line-height:1.05;padding:.45rem .2rem;font-size:1.25rem}
+.prog time small{display:block;font-size:.72rem;letter-spacing:.06em;color:#ffb27a}
+.prog b{display:block}
+.prog span{color:var(--muted);font-size:.92rem}
+.poster img{border-radius:16px;box-shadow:0 18px 40px rgba(0,0,0,.18);width:100%;aspect-ratio:1400/1980;object-fit:cover}
+.culture .past{margin-top:1.4rem;color:var(--muted);font-size:.95rem}
+@media (max-width:820px){.culture .wrap{grid-template-columns:minmax(0,1fr)}.poster{max-width:420px}}
+
+/* Ânes bandeau */
+.donkeys{position:relative;min-height:min(70vh,560px);display:flex;align-items:flex-end;color:#fff;padding:0;overflow:hidden;background:#3a3129}
+.donkeys img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.donkeys::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.7))}
+.donkeys .wrap{position:relative;z-index:1;padding-block:40px;width:100%}
+.donkeys h2{max-width:16ch}
+
+/* Autour */
+.around{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.place{border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem;display:grid;gap:.4rem;align-content:start;min-width:0}
+.place .t{font-weight:700;color:var(--leaf);font-size:.88rem}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .place .t{color:#9cc76c}}
+.place p{color:var(--muted);font-size:.94rem}
+@media (max-width:900px){.around{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.around{grid-template-columns:minmax(0,1fr)}}
+
+/* Contact */
+.contact{background:var(--leaf-dk);color:#fff}
+.contact .tag{color:#ffc79c}
+.contact .head p{color:rgba(255,255,255,.82)}
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:1.4rem;display:grid;gap:.6rem;align-content:start;min-width:0}
+.card .muted{color:rgba(255,255,255,.75);font-size:.95rem}
+.big{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,6vw,1.9rem);text-decoration:none;line-height:1.1}
+.mail{font-weight:700;overflow-wrap:anywhere}
+.row{display:flex;flex-wrap:wrap;gap:.6rem}
+.contact .btn.alt{color:#fff}
+@media (max-width:900px){.cgrid{grid-template-columns:minmax(0,1fr)}}
+footer{background:#1f3311;color:#c9d6bc;font-size:.9rem;padding-block:24px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.4rem 1.2rem}
+footer b{color:#fff}
+.callbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:30}
+.callbar .btn{width:100%;box-shadow:0 10px 26px rgba(0,0,0,.3)}
+@media (max-width:620px){.callbar{display:block}footer{padding-bottom:92px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ferme Âne et Carotte, accueil">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 28 L22 10 L26 14 Z" fill="#e2661d"/><path d="M22 10 C20 5 22 3 24 2 M22 10 C26 7 29 8 30 9 M22 10 C24 5 27 4 29 4" stroke="#4e7a2a" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+      Âne <i>&amp;</i> Carotte
+    </a>
+    <ul>
+      <li><a href="#boutique">La boutique</a></li>
+      <li><a href="#cultures">Les cultures</a></li>
+      <li><a href="#dormir">Dormir à la ferme</a></li>
+      <li><a href="#culture">F'âne de culture</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="tel:+33687199039"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="tag">Ferme bio · Parc naturel régional Périgord-Limousin</p>
+        <h1>Des légumes, des ânes et <span>du bon temps</span></h1>
+        <p class="lede">Adossée au village typique des Jarosses, à Champagnac-la-Rivière, la ferme Âne &amp; Carotte de Lucien et Pascale Masdieu cultive ses légumes en agriculture biologique, entre prairies pour les ânes, céréales et vergers.</p>
+        <div class="ctas">
+          <a class="btn" href="#boutique">Venir à la boutique</a>
+          <a class="btn alt" href="#dormir">Dormir à la ferme</a>
+        </div>
+      </div>
+      <div class="photo-blob">
+        <img src="img/prairie-fleurie.jpg" alt="Prairie fleurie de la ferme Âne et Carotte" width="1190" height="892">
+        <div class="sticker"><b>13 hectares</b>certifiés en agriculture biologique</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ribbon">
+    <div class="wrap">
+      <h2>La boutique est ouverte</h2>
+      <div class="hours">
+        <div><b>Vendredi</b>16 h – 18 h 30</div>
+        <div><b>Samedi</b>10 h – 12 h 30</div>
+      </div>
+    </div>
+  </div>
+
+  <section id="boutique">
+    <div class="wrap shop">
+      <div class="txt">
+        <p class="tag">La boutique à la ferme</p>
+        <h2>Le panier de la semaine, cueilli sur place</h2>
+        <p>Une grande diversité de légumes de saison, et toute l'année de nombreuses variétés de salades. Nous proposons aussi nos confitures de la ferme.</p>
+        <div class="chips green"><span>Batavias</span><span>Sucrines</span><span>Scaroles</span><span>Roquette</span><span>Mâche</span><span>Légumes de saison</span><span>Confitures de la ferme</span></div>
+        <p>Pour compléter votre panier, des produits locaux&nbsp;:</p>
+        <div class="chips"><span>Œufs</span><span>Fromages de chèvre et de vache</span><span>Yaourts</span><span>Lait cru</span><span>Pain</span><span>Fruits de saison</span><span>Légumes secs</span><span>Jus de pommes</span></div>
+      </div>
+      <div class="mosaic">
+        <img class="tall" src="img/boutique-etageres.jpg" alt="Étagères de la boutique avec confitures et produits locaux" width="768" height="1024" loading="lazy">
+        <img class="sq" src="img/boutique-legumes.jpg" alt="Cagettes de légumes de saison dans la boutique" width="1280" height="720" loading="lazy">
+        <img class="sq" src="img/boutique-tomates.jpg" alt="Tomates de la ferme en cagettes" width="1400" height="787" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="cultures" class="fields">
+    <div class="wrap">
+      <div class="head">
+        <p class="tag">Les cultures</p>
+        <h2>Treize hectares en agriculture biologique</h2>
+        <p>La ferme se partage entre cultures légumières, prairies pour les ânes, céréales et vergers.</p>
+      </div>
+      <div class="fgrid">
+        <figure><img src="img/cultures-rangs.jpg" alt="Rangs de légumes en plein champ" width="1190" height="892" loading="lazy"><figcaption>Plein champ</figcaption></figure>
+        <figure><img src="img/cultures-salades.jpg" alt="Rangs de salades" width="1400" height="1050" loading="lazy"><figcaption>Salades</figcaption></figure>
+        <figure><img src="img/cultures-serre.jpg" alt="Jeunes plants sous serre" width="1190" height="892" loading="lazy"><figcaption>Sous serre</figcaption></figure>
+        <figure><img src="img/cultures-tomates.jpg" alt="Pieds de tomates chargés de fruits" width="1190" height="668" loading="lazy"><figcaption>Tomates</figcaption></figure>
+      </div>
+      <div class="pillars">
+        <div><b>Légumes</b><span>de saison, vendus à la boutique de la ferme</span></div>
+        <div><b>Prairies</b><span>pour les ânes de la ferme</span></div>
+        <div><b>Vergers</b><span>et cultures de céréales</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="donkeys" aria-label="Les ânes de la ferme">
+    <img src="img/anes.jpg" alt="Les ânes de la ferme alignés dans la prairie enneigée" width="1400" height="788" loading="lazy">
+    <div class="wrap"><p class="tag" style="color:#ffc79c">Âne &amp; Carotte</p><h2>Les ânes de la ferme</h2></div>
+  </section>
+
+  <section id="dormir">
+    <div class="wrap">
+      <div class="head">
+        <p class="tag">Dormir à la ferme</p>
+        <h2>Une nuit sous le grand chêne</h2>
+        <p>Une cabane en pleine nature ou un emplacement de camping, avec les ânes pour voisins.</p>
+      </div>
+      <div class="stay">
+        <article class="offer">
+          <img src="img/cabane.jpg" alt="La cabane en bois sur pilotis à l'ombre d'un chêne" width="1280" height="960" loading="lazy">
+          <div class="in">
+            <span class="when">Disponible à partir du 1er mai 2026</span>
+            <h3>La cabane à la ferme</h3>
+            <p>Venez passer une nuit en pleine nature, dans une petite cabane à l'ombre d'un grand chêne, et profitez de notre petit déjeuner gourmand.</p>
+            <ul class="price">
+              <li><span>2 personnes, petit déjeuner compris</span><b>55 € / nuit</b></li>
+              <li><span>2 personnes, sans petit déjeuner</span><b>30 € / nuit</b></li>
+              <li><span>3 personnes, petit déjeuner compris</span><b>60 € / nuit</b></li>
+              <li><span>3 personnes, sans petit déjeuner</span><b>35 € / nuit</b></li>
+            </ul>
+            <div class="thumbs">
+              <img src="img/cabane-interieur.jpg" alt="Intérieur de la cabane avec son lit" width="1400" height="1050" loading="lazy">
+              <img src="img/cabane-vue.jpg" alt="Vue sur la campagne depuis la fenêtre de la cabane" width="1400" height="1050" loading="lazy">
+            </div>
+          </div>
+        </article>
+        <article class="offer">
+          <img src="img/camping.jpg" alt="Tentes de campeurs à l'ombre des arbres de la ferme" width="1190" height="794" loading="lazy">
+          <div class="in">
+            <span class="when">Réouverture le 1er mai 2026</span>
+            <h3>Le camping à la ferme</h3>
+            <p>Planter sa tente dans le bocage limousin, au calme, avec les ânes comme voisins le soir.</p>
+            <ul class="price">
+              <li><span>Par personne et par nuit</span><b>8 €</b></li>
+              <li><span>Enfant de 2 à 12 ans</span><b>6 €</b></li>
+            </ul>
+            <div class="row" style="margin-top:.4rem"><a class="btn" href="tel:+33687199039">Réserver par téléphone</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="breakfast" id="ptit-creux">
+    <div class="wrap">
+      <div class="head">
+        <p class="tag">Un p'tit creux&nbsp;?</p>
+        <h2>Petit déj' à la ferme et casse-croûte</h2>
+        <p>Sur réservation, deux formules de petit déjeuner gourmand, avec les produits de la ferme.</p>
+      </div>
+      <div class="bgrid">
+        <div class="formula">
+          <h3>Sucré</h3>
+          <ul><li>Un verre de jus de pommes</li><li>Boisson chaude (café, thé, chocolat, lait…)</li><li>Pain, beurre, confiture</li><li>Crêpe aux confitures maison ou au miel</li><li>Yaourt ou fromage frais au lait entier</li><li>Un fruit</li><li>La gourmandise du jour</li></ul>
+        </div>
+        <div class="formula">
+          <h3>Salé</h3>
+          <ul><li>Un verre de jus de pommes</li><li>Boisson chaude (café, thé, chocolat, lait…)</li><li>Omelette ou tarte aux légumes de saison</li><li>Assortiment de fromages</li><li>Crêpe aux confitures maison ou au miel</li><li>Un fruit</li><li>La gourmandise du jour</li></ul>
+        </div>
+      </div>
+      <p class="note">Réservation auprès de Pascale&nbsp;: <a href="tel:+33643264159" style="white-space:nowrap">06 43 26 41 59</a></p>
+    </div>
+  </section>
+
+  <section id="culture" class="culture">
+    <div class="wrap">
+      <div>
+        <p class="tag">F'âne de culture</p>
+        <h2>L'été, la ferme devient une scène</h2>
+        <p style="color:var(--muted);margin-top:1rem">Théâtre de rue, concerts, lectures&nbsp;: avec l'association F'âne de culture, la ferme accueille chaque été des soirées, avec p'tit bar et restauration locale sur place.</p>
+        <p style="font-weight:700;margin-top:1.2rem">Programmation estivale 2026</p>
+        <ul class="prog">
+          <li><time>10<small>JUIL.</small></time><div><b>Les Ronds d'Flan</b><span>Théâtre / chanson</span></div></li>
+          <li><time>17<small>JUIL.</small></time><div><b>Fiasco – Collectif sur le bord</b><span>Théâtre de rue</span></div></li>
+          <li><time>31<small>JUIL.</small></time><div><b>Alberi Sonori</b><span>Trad italien actuel, atelier chant et danses traditionnelles</span></div></li>
+          <li><time>21<small>AOÛT</small></time><div><b>Trio 25</b><span>De la chanson française au jazz</span></div></li>
+          <li><time>25<small>AOÛT</small></time><div><b>Larissa</b><span>Jazz mélodies, duo piano et voix</span></div></li>
+          <li><time>25<small>SEPT.</small></time><div><b>Les Gorges du Taurion</b><span>Lectures</span></div></li>
+        </ul>
+        <p class="past">Depuis 2015&nbsp;: concerts, spectacles, lectures, journées portes ouvertes, sorties ornithologiques et ateliers.</p>
+      </div>
+      <div class="poster"><img src="img/programmation-2026.jpg" alt="Affiche de la programmation estivale 2026 de F'âne de culture" width="1400" height="1980" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section id="autour" style="background:var(--bg2)">
+    <div class="wrap">
+      <div class="head">
+        <p class="tag">À voir autour de chez nous</p>
+        <h2>Le Périgord-Limousin à deux pas</h2>
+      </div>
+      <div class="around">
+        <div class="place"><span class="t">15 min · Champagnac-la-Rivière</span><h3>Château de Brie</h3><p>Une demeure seigneuriale du XVIe siècle, racontée par ses propriétaires.</p></div>
+        <div class="place"><span class="t">15 min · Saint-Auvent</span><h3>L'étang de la Pouge</h3><p>Au cœur du bocage du Parc naturel régional, une ancienne pêcherie sans doute aménagée dès le Moyen Âge.</p></div>
+        <div class="place"><span class="t">20 min · Saint-Auvent</span><h3>Notre-Dame de la Paix</h3><p>Le sanctuaire surnommé « la grotte », creusé dans le rocher au bord de la Gorre.</p></div>
+        <div class="place"><span class="t">25 min · Dournazac</span><h3>Château de Montbrun</h3><p>Une forteresse de la fin du XIIe siècle au bord du Dournaujou.</p></div>
+        <div class="place"><span class="t">25 min · Dournazac</span><h3>Le Grand Puyconnieux</h3><p>Un point de vue exceptionnel et une table d'orientation sur la ligne de partage des eaux.</p></div>
+        <div class="place"><span class="t">25 min · Chéronnac</span><h3>Le site de Peyrassoulat</h3><p>Les vestiges d'une ancienne forge au bord de la Tardoire, sous les platanes et les ifs.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="head">
+        <p class="tag">Contact</p>
+        <h2>Lucien et Pascale vous attendent</h2>
+        <p>Une question, une réservation de la cabane, du camping ou d'un petit déjeuner&nbsp;? Appelez-nous ou écrivez-nous.</p>
+      </div>
+      <div class="cgrid">
+        <div class="card">
+          <h3>Lucien</h3>
+          <a class="big" href="tel:+33687199039">06 87 19 90 39</a>
+          <a class="mail" href="mailto:lucien.masdieu@wanadoo.fr">lucien.masdieu@wanadoo.fr</a>
+          <div class="row"><a class="btn" href="tel:+33687199039">Appeler</a><a class="btn alt" href="mailto:lucien.masdieu@wanadoo.fr">Écrire</a></div>
+        </div>
+        <div class="card">
+          <h3>Pascale</h3>
+          <a class="big" href="tel:+33643264159">06 43 26 41 59</a>
+          <a class="mail" href="mailto:p.masdieu-voisin@orange.fr">p.masdieu-voisin@orange.fr</a>
+          <div class="row"><a class="btn" href="tel:+33643264159">Appeler</a></div>
+        </div>
+        <div class="card">
+          <h3>La ferme</h3>
+          <p class="big">Les Jarosses<br>87150 Champagnac-la-Rivière</p>
+          <p class="muted">Boutique&nbsp;: vendredi 16 h – 18 h 30, samedi 10 h – 12 h 30</p>
+          <div class="row"><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Les+Jarosses+87150+Champagnac-la-Rivi%C3%A8re">Itinéraire</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span><b>Ferme Âne &amp; Carotte</b> · Les Jarosses, 87150 Champagnac-la-Rivière</span><span>Légumes bio · Cabane · Camping · F'âne de culture</span></div></footer>
+<div class="callbar"><a class="btn" href="tel:+33687199039">Appeler la ferme</a></div>
+</body>
+</html>

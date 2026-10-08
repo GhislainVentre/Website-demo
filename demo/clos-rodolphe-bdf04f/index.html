@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clos Rodolphe · Maison d'hôtes à Beaulieu-sur-Dordogne</title>
+<meta name="description" content="Le Clos Rodolphe, maison d'hôtes dans la Maison Bouyssonie, demeure des XVIIIe et XIXe siècles au cœur de Beaulieu-sur-Dordogne : deux chambres et une suite, jardin clos, terrasse et table d'hôtes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700&display=swap">
+<style>
+/* Pierre blonde de Beaulieu et vert céladon du logo du Clos Rodolphe */
+:root{
+  --bg:#faf7f1; --bg2:#f0e9dc; --fg:#22261f; --muted:#646a5e; --line:#e2d9c8;
+  --celadon:#5f9a86; --celadon-ink:#2f6b58; --forest:#1d3a32; --stone:#cdb995; --gold:#b48a4a;
+  --display:'Playfair Display',Georgia,serif; --body:'Mulish','Segoe UI',Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121513;--bg2:#1a1e1b;--fg:#eef0ea;--muted:#a9b0a2;--line:#2d332e;--celadon-ink:#8fc7b2;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121513;--bg2:#1a1e1b;--fg:#eef0ea;--muted:#a9b0a2;--line:#2d332e;--celadon-ink:#8fc7b2;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.65;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.1;margin:0;text-wrap:balance}
+h2{font-size:clamp(2rem,6.5vw,3.2rem)}
+h3{font-size:1.5rem}
+p{margin:0}
+.wrap{max-width:1160px;margin-inline:auto;padding-inline:20px}
+section{padding-block:clamp(60px,9vw,110px)}
+.eyebrow{font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--celadon-ink)}
+.head{display:grid;gap:.8rem;max-width:46rem;margin-bottom:2.4rem}
+.head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.35rem;border-radius:999px;font-weight:700;font-size:.95rem;text-decoration:none;background:var(--forest);color:#fff;border:1.5px solid var(--forest);white-space:nowrap}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn svg{width:18px;height:18px;flex:none}
+a:focus-visible{outline:2px solid var(--celadon);outline-offset:3px}
+
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 93%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand img{width:44px;height:auto;border-radius:6px;background:#000}
+.brand span{font-family:var(--display);font-size:1.3rem;white-space:nowrap;line-height:1}
+.brand small{display:block;font-family:var(--body);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-weight:600;font-size:.93rem}
+.nav .btn{padding:.5rem .95rem;font-size:.88rem}
+@media (max-width:920px){.nav ul{display:none}}
+
+/* Hero */
+.hero{position:relative;min-height:min(88vh,760px);display:flex;align-items:flex-end;padding:0;color:#fff;overflow:hidden;background:var(--forest)}
+.hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,26,22,.05) 15%,rgba(14,26,22,.6) 45%,rgba(14,26,22,.92))}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-block:56px 44px}
+.hero .eyebrow{color:#cfe6dc}
+.hero h1{font-size:clamp(2.7rem,10vw,5.4rem);margin-top:.6rem}
+.hero h1 em{font-style:italic;color:#d9c7a2}
+.hero .lede{max-width:36rem;margin-top:1rem;font-size:1.08rem;color:rgba(255,255,255,.9)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+.hero .btn{background:#fff;color:var(--forest);border-color:#fff}
+.hero .btn.ghost{background:transparent;color:#fff}
+
+/* Maison */
+.house{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,72px);align-items:center}
+.house .txt{display:grid;gap:1rem}
+.house .txt p{color:var(--muted)}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.duo img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px}
+.duo img:last-child{margin-top:40px}
+.spaces{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:.4rem}
+.spaces div{border-left:2px solid var(--celadon);padding:.2rem 0 .2rem .8rem;font-size:.95rem;min-width:0}
+.spaces b{display:block;font-weight:700}
+.spaces span{color:var(--muted)}
+@media (max-width:860px){.house{grid-template-columns:minmax(0,1fr)}}
+
+/* Chambres */
+.rooms-sec{background:var(--bg2)}
+.rooms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.room{display:grid;grid-template-rows:auto 1fr;background:var(--bg);border-radius:6px;overflow:hidden;min-width:0;box-shadow:0 1px 0 var(--line)}
+.room img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.room .in{padding:1.4rem 1.4rem 1.6rem;display:grid;gap:.7rem;align-content:start}
+.room .meta{display:flex;flex-wrap:wrap;gap:.4rem}
+.room .meta span{font-size:.8rem;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:.15rem .65rem;color:var(--celadon-ink)}
+.room p{color:var(--muted);font-size:.95rem}
+.room .who{font-family:var(--display);font-style:italic;color:var(--fg);font-size:1.05rem}
+@media (max-width:960px){.rooms{grid-template-columns:minmax(0,1fr)}.room{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);grid-template-rows:none}.room img{height:100%;aspect-ratio:auto;min-height:260px}}
+@media (max-width:620px){.room{grid-template-columns:minmax(0,1fr)}.room img{aspect-ratio:4/3;min-height:0}}
+.comfort{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.comfort span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:.3rem .85rem;font-size:.9rem;font-weight:600}
+
+/* Table */
+.table-sec{background:var(--forest);color:#eef3ef}
+.table-sec .eyebrow{color:#a9d4c3}
+.table-sec .head p{color:rgba(238,243,239,.78)}
+.tgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,60px);align-items:start}
+.tgrid img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px}
+.menu{border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:1.6rem;display:grid;gap:.9rem}
+.menu h3{color:#e6d6b5}
+.menu ol{list-style:none;margin:0;padding:0;display:grid;gap:.1rem;text-align:center;font-family:var(--display);font-size:1.15rem}
+.menu ol li{padding:.45rem 0;border-bottom:1px dotted rgba(255,255,255,.2)}
+.menu ol li:last-child{border-bottom:0}
+.menu p{color:rgba(238,243,239,.78);font-size:.95rem}
+.breakfast{display:grid;gap:.9rem;margin-bottom:1.6rem}
+.breakfast p{color:rgba(238,243,239,.85)}
+@media (max-width:860px){.tgrid{grid-template-columns:minmax(0,1fr)}.tgrid img{aspect-ratio:4/3}}
+
+/* Pratique */
+.practical{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.practical div{border:1px solid var(--line);border-radius:6px;padding:1.1rem 1.2rem;display:grid;gap:.3rem;align-content:start;min-width:0}
+.practical svg{width:26px;height:26px;color:var(--celadon-ink)}
+.practical b{font-weight:700}
+.practical span{color:var(--muted);font-size:.93rem}
+@media (max-width:960px){.practical{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.practical{grid-template-columns:minmax(0,1fr)}}
+
+/* Galerie */
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-flow:dense;gap:10px}
+.gallery figure{margin:0;overflow:hidden;border-radius:4px;background:var(--bg2);min-width:0}
+.gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1}
+.gallery .w{grid-column:span 2}
+.gallery .w img{aspect-ratio:2/1}
+.gallery .t{grid-row:span 2}
+.gallery .t img{aspect-ratio:1/2}
+@media (max-width:720px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Beaulieu */
+.beaulieu{background:var(--bg2)}
+.bgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,6vw,72px);align-items:start}
+.bgrid .txt{display:grid;gap:1rem}
+.bgrid .txt p{color:var(--muted)}
+.bgrid figure{margin:0}
+.bgrid figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.bgrid figcaption{font-size:.85rem;color:var(--muted);margin-top:.5rem;font-style:italic}
+.nearby{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.3rem}
+.nearby span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:.2rem .75rem;font-size:.88rem}
+.history{margin-top:clamp(36px,6vw,64px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.history article{border-top:2px solid var(--celadon);padding-top:1rem;display:grid;gap:.5rem;align-content:start;min-width:0}
+.history .y{font-family:var(--display);font-size:1.8rem;color:var(--celadon-ink);line-height:1}
+.history p{color:var(--muted);font-size:.95rem}
+@media (max-width:860px){.bgrid{grid-template-columns:minmax(0,1fr)}.history{grid-template-columns:minmax(0,1fr)}}
+
+/* Contact */
+.contact{background:#0f1e19;color:#eef3ef}
+.contact .eyebrow{color:#a9d4c3}
+.contact .head p{color:rgba(238,243,239,.78)}
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{border:1px solid rgba(255,255,255,.16);border-radius:6px;padding:1.5rem;display:grid;gap:.7rem;align-content:start;min-width:0}
+.card .m{color:rgba(238,243,239,.7);font-size:.93rem}
+.big{font-family:var(--display);font-size:clamp(1.6rem,6vw,2rem);line-height:1.15;text-decoration:none}
+.mail{font-weight:700;font-size:1.08rem;overflow-wrap:anywhere}
+.row{display:flex;flex-wrap:wrap;gap:.6rem}
+.contact .btn{background:#e6d6b5;color:#0f1e19;border-color:#e6d6b5}
+.contact .btn.ghost{background:transparent;color:#eef3ef;border-color:#eef3ef}
+@media (max-width:900px){.cgrid{grid-template-columns:minmax(0,1fr)}}
+footer{background:#08120f;color:#9fb0a8;font-size:.88rem;padding-block:24px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.4rem 1.2rem}
+footer b{color:#fff;font-weight:700}
+.callbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:30}
+.callbar .btn{width:100%;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+@media (max-width:620px){.callbar{display:block}footer{padding-bottom:92px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Clos Rodolphe, accueil"><img src="img/logo.jpg" alt="" width="300" height="198"><span>Clos Rodolphe<small>Maison d'hôtes</small></span></a>
+    <ul>
+      <li><a href="#maison">La maison</a></li>
+      <li><a href="#chambres">Les chambres</a></li>
+      <li><a href="#table">Table d'hôtes</a></li>
+      <li><a href="#beaulieu">Beaulieu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="tel:+33683380368"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img src="img/facade-terrasse.jpg" alt="La façade en pierre de la Maison Bouyssonie et sa terrasse fleurie" width="1190" height="892">
+    <div class="wrap">
+      <p class="eyebrow">Maison d'hôtes · Beaulieu-sur-Dordogne</p>
+      <h1>Une halte <em>d'exception</em></h1>
+      <p class="lede">Au cœur de Beaulieu-sur-Dordogne, à deux pas de l'abbatiale Saint-Pierre, Thierry et Philippe vous accueillent dans la Maison Bouyssonie, belle demeure historique des XVIIIe et XIXe siècles.</p>
+      <div class="ctas">
+        <a class="btn" href="#chambres">Découvrir les chambres</a>
+        <a class="btn ghost" href="tel:+33683380368">06 83 38 03 68</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="maison">
+    <div class="wrap house">
+      <div class="txt">
+        <p class="eyebrow">La maison d'hôtes</p>
+        <h2>Une source de sérénité et de bien-être</h2>
+        <p>Le Clos Rodolphe vous reçoit dans deux vastes chambres et une suite, au premier étage de la maison. Chaque espace possède son univers propre, fait de meubles et d'objets d'art anciens.</p>
+        <p>Thierry et Philippe mettent à votre disposition leur connaissance de la région et aiment transmettre leur amour pour la nature environnante, les loisirs de proximité et l'histoire de l'art locale.</p>
+        <div class="spaces">
+          <div><b>Grand salon</b><span>avec cheminée</span></div>
+          <div><b>Salle à manger</b><span>pour les repas partagés</span></div>
+          <div><b>Cuisine ancienne</b><span>avec son « cantou »</span></div>
+          <div><b>Bibliothèque</b><span>avec cheminée, au 2e étage</span></div>
+          <div><b>Terrasse surélevée</b><span>pour déjeuner dehors</span></div>
+          <div><b>Jardin clos</b><span>un joli jardin de ville</span></div>
+        </div>
+      </div>
+      <div class="duo">
+        <img src="img/jardin-terrasse.jpg" alt="Le jardin clos au pied de la terrasse" width="1190" height="892" loading="lazy">
+        <img src="img/bibliotheque.jpg" alt="La bibliothèque du deuxième étage" width="1400" height="1050" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="chambres" class="rooms-sec">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Les chambres</p>
+        <h2>Trois chambres, trois grandes figures de la Corrèze</h2>
+        <p>Chaque espace a été pensé pour vous offrir un séjour de qualité. Le petit déjeuner est compris dans le prix des chambres.</p>
+      </div>
+      <div class="rooms">
+        <article class="room">
+          <img src="img/chambre-poulenc.jpg" alt="La chambre Francis Poulenc" width="1400" height="1050" loading="lazy">
+          <div class="in">
+            <div class="meta"><span>22 m²</span><span>Chambre</span></div>
+            <h3>Chambre Francis Poulenc</h3>
+            <p class="who">Francis Poulenc (1899-1963)</p>
+            <p>En 1943, le compositeur loue un petit deux-pièces à Beaulieu. C'est en contemplant le clocher, « solide et si français », qu'il conçoit la musique de <em>Liberté</em>, qui clôt sa cantate <em>Figure humaine</em> sur des poèmes d'Éluard.</p>
+          </div>
+        </article>
+        <article class="room">
+          <img src="img/chambre-colette.jpg" alt="La chambre Colette de Jouvenel" width="1400" height="1050" loading="lazy">
+          <div class="in">
+            <div class="meta"><span>30 m²</span><span>Lit de 160 cm</span></div>
+            <h3>Chambre Colette de Jouvenel</h3>
+            <p class="who">Colette de Jouvenel (1913-1981)</p>
+            <p>Fille de l'écrivaine Colette, la « Bel-Gazou » de ses lecteurs, elle participe activement à la Résistance depuis le château familial de Curemonte, puis défend comme journaliste l'égalité entre les femmes et les hommes.</p>
+          </div>
+        </article>
+        <article class="room">
+          <img src="img/suite-malraux.jpg" alt="La suite familiale André Malraux" width="1400" height="1050" loading="lazy">
+          <div class="in">
+            <div class="meta"><span>60 m²</span><span>Suite familiale</span><span>Jusqu'à 5 personnes</span></div>
+            <h3>Suite André Malraux</h3>
+            <p class="who">André Malraux (1901-1976)</p>
+            <p>Prix Goncourt 1933 pour <em>La Condition humaine</em>, il se réfugie à Beaulieu en 1939, s'engage dans la Résistance et revient en Corrèze créer la brigade « Alsace-Lorraine ». La suite réunit deux chambres et un « chambrou ».</p>
+          </div>
+        </article>
+      </div>
+      <div class="comfort"><span>Literie haut de gamme</span><span>Salles d'eau spacieuses</span><span>Mobilier et objets d'art anciens</span><span>Petit déjeuner compris</span><span>Lit d'appoint possible</span><span>Wi-Fi gratuit</span></div>
+    </div>
+  </section>
+
+  <section id="table" class="table-sec">
+    <div class="wrap tgrid">
+      <div>
+        <div class="head" style="margin-bottom:1.6rem">
+          <p class="eyebrow">Petit déjeuner et table d'hôtes</p>
+          <h2>Les produits du terroir, avec générosité</h2>
+        </div>
+        <div class="breakfast">
+          <p>Savourez un copieux petit déjeuner, avec gâteaux et confitures « maison », servi entre 8 h 30 et 9 h 30. À la belle saison, la terrasse et le jardin invitent à prendre ses repas en plein air.</p>
+          <p>Nous utilisons exclusivement des produits locaux, bio ou issus de l'agriculture raisonnée, pour une cuisine généreuse et raffinée.</p>
+        </div>
+        <div class="menu">
+          <h3>Le dîner à la table d'hôtes</h3>
+          <ol>
+            <li>L'apéritif et ses amuse-bouches</li>
+            <li>Une entrée de saison</li>
+            <li>Un plat et son accompagnement</li>
+            <li>Le plateau de fromages</li>
+            <li>Un dessert</li>
+            <li>Café ou infusion</li>
+          </ol>
+          <p>Eaux et vin du Sud-Ouest compris. Un soir par semaine, sur demande au moins 48 h à l'avance (fermée en haute saison).</p>
+        </div>
+      </div>
+      <img src="img/petit-dejeuner.jpg" alt="Table du petit déjeuner dressée dans la cuisine ancienne" width="1400" height="1867" loading="lazy">
+    </div>
+  </section>
+
+  <section id="pratique">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Informations pratiques</p>
+        <h2>Bon à savoir</h2>
+      </div>
+      <div class="practical">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M10 16V8h3a2.5 2.5 0 0 1 0 5h-3"/></svg><b>Parking gratuit</b><span>Parking public à quelques mètres, sur le boulevard Rodolphe-de-Turenne. Passez à pied sous la porte Sainte-Catherine&nbsp;: la maison est la première à gauche.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="6" cy="16" r="3.5"/><circle cx="18" cy="16" r="3.5"/><path d="M6 16l4-7h5l3 7M10 9l-1-3H7m8 3l1-3h2"/></svg><b>Deux vélos</b><span>Mis gracieusement à disposition pour visiter Beaulieu.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 9a13 13 0 0 1 18 0M6 12.5a8.5 8.5 0 0 1 12 0M9 16a4 4 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/></svg><b>Wi-Fi</b><span>Gratuit pour nos hôtes.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg><b>Restaurants</b><span>De nombreux restaurants accessibles à pied.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 15h14v3H3zM19 15v3M21 15v3"/><path d="M4 4l16 16"/></svg><b>Non-fumeur</b><span>On ne fume pas dans la maison, mais c'est possible au jardin et sur la terrasse.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="7" r="2"/><circle cx="16" cy="7" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="M12 13c-3 0-5 3-5 5s2 2 5 2 5 0 5-2-2-5-5-5z"/></svg><b>Animaux</b><span>Les animaux ne sont pas acceptés.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg><b>Paiement</b><span>En espèces ou par chèque.</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 11h14v3a7 7 0 0 1-14 0zM19 12h1.5a2 2 0 0 1 0 4H18"/><path d="M9 4c0 2 2 2 2 4M13 4c0 2 2 2 2 4"/></svg><b>Petit déjeuner</b><span>Compris, servi de 8 h 30 à 9 h 30.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="photos" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Galerie</p>
+        <h2>La maison en images</h2>
+      </div>
+      <div class="gallery">
+        <figure class="w"><img src="img/facade-jardin.jpg" alt="La maison vue depuis le jardin, sous les arbres" width="1190" height="892" loading="lazy"></figure>
+        <figure><img src="img/porte-sainte-catherine.jpg" alt="Une tour-porte en pierre du vieux Beaulieu" width="918" height="1632" loading="lazy"></figure>
+        <figure><img src="img/jardin.jpg" alt="Le jardin fleuri" width="1190" height="892" loading="lazy"></figure>
+        <figure><img src="img/suite-malraux-2.jpg" alt="Une chambre de la suite André Malraux" width="1400" height="1050" loading="lazy"></figure>
+        <figure class="w"><img src="img/terrasse.jpg" alt="La terrasse et ses plantes" width="1190" height="892" loading="lazy"></figure>
+        <figure><img src="img/chambre-colette-2.jpg" alt="Détail de la chambre Colette de Jouvenel" width="1400" height="1050" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="beaulieu" class="beaulieu">
+    <div class="wrap">
+      <div class="bgrid">
+        <div class="txt">
+          <p class="eyebrow">Beaulieu-sur-Dordogne</p>
+          <h2>La « Riviera limousine »</h2>
+          <p>Au sud de la vallée de la Dordogne, inscrite par l'Unesco au réseau mondial des Réserves de biosphère, Beaulieu bénéficie d'un climat doux. Son patrimoine est très riche&nbsp;: la chapelle des Pénitents, la cité médiévale, l'abbatiale Saint-Pierre et son portail roman, la maison Renaissance, les demeures du XVIIIe siècle… À visiter à pied, à vélo, et même en gabare.</p>
+          <p>Tout proche&nbsp;:</p>
+          <div class="nearby"><span>Collonges-la-Rouge</span><span>Curemonte</span><span>Turenne</span><span>Rocamadour</span><span>Gouffre de Padirac</span><span>Château de Montal</span><span>Château de Castelnau</span><span>Abbaye d'Aubazine</span><span>La Chapelle-aux-Saints</span><span>Brive</span><span>Tulle</span></div>
+          <p style="margin-top:.4rem">Un peu plus loin&nbsp;: Sarlat, Lascaux, Les Eyzies, Figeac, Souillac, Martel et les barrages de la Dordogne.</p>
+          <p>Pour les amateurs de loisirs&nbsp;: randonnée, pêche à la mouche, canoë-kayak, escalade, deltaplane, golf, marchés de pays, balades contées en gabare et Fête de la fraise.</p>
+        </div>
+        <figure>
+          <img src="img/portail-abbatiale.jpg" alt="Le tympan roman du portail sud de l'abbatiale Saint-Pierre de Beaulieu" width="1400" height="1050" loading="lazy">
+          <figcaption>Le portail sud de l'abbatiale Saint-Pierre, chef-d'œuvre de la sculpture romane.</figcaption>
+        </figure>
+      </div>
+      <div class="history">
+        <article><span class="y">XVIIIe siècle</span><h3>Sur l'ancien rempart</h3><p>Après la démolition des murailles médiévales naît le boulevard Saint-Rodolphe-de-Turenne. Notre maison y est édifiée au XVIIIe siècle, ses jardins sur les fossés comblés.</p></article>
+        <article><span class="y">1851</span><h3>La Maison Bouyssonie</h3><p>Devenue la propriété de la famille Bouyssonie, la maison est modernisée au début du Second Empire, comme en témoigne la date inscrite sur le garde-corps de la terrasse.</p></article>
+        <article><span class="y">1908</span><h3>L'homme de La Chapelle-aux-Saints</h3><p>Amédée, Jean et Paul Bouyssonie découvrent un squelette néandertalien presque complet, qui reste une référence pour les paléoanthropologues.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Contact et réservation</p>
+        <h2>Nous serons heureux de vous accueillir</h2>
+        <p>Pour connaître les disponibilités et les tarifs, ou réserver la table d'hôtes, contactez Thierry et Philippe.</p>
+      </div>
+      <div class="cgrid">
+        <div class="card">
+          <h3>Téléphone</h3>
+          <a class="big" href="tel:+33683380368">06 83 38 03 68</a>
+          <div class="row"><a class="btn" href="tel:+33683380368">Appeler</a></div>
+        </div>
+        <div class="card">
+          <h3>E-mail</h3>
+          <a class="mail" href="mailto:thierry@closrodolphe.fr">thierry@closrodolphe.fr</a>
+          <div class="row"><a class="btn" href="mailto:thierry@closrodolphe.fr?subject=Demande%20de%20r%C3%A9servation">Demander une réservation</a></div>
+        </div>
+        <div class="card">
+          <h3>Adresse</h3>
+          <p class="big">14 rue Sainte-Catherine<br>19120 Beaulieu-sur-Dordogne</p>
+          <div class="row"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=14+rue+Sainte-Catherine+19120+Beaulieu-sur-Dordogne">Itinéraire</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span><b>Le Clos Rodolphe</b> · Maison d'hôtes · 14 rue Sainte-Catherine, 19120 Beaulieu-sur-Dordogne</span><span>Thierry et Philippe</span></div></footer>
+<div class="callbar"><a class="btn" href="tel:+33683380368">Appeler le 06 83 38 03 68</a></div>
+</body>
+</html>
